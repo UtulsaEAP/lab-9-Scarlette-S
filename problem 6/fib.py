@@ -1,7 +1,13 @@
 def fibonacci(n):
     
-    #write your code here
-    return
+    a = 0
+    b = 1
+    for i in range(1,n):
+        global c
+        c = a + b
+        a = b
+        b = c
+    return c
 
 if __name__ == '__main__':
     start_num = int(input())
